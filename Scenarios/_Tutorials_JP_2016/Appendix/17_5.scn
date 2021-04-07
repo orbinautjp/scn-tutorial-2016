@@ -1,0 +1,171 @@
+BEGIN_HYPERDESC
+<body style="font-family: Meiryo;">
+    <h1 style="font-size: small;">Part17-5 月－地球マニューバを実行する</h1>
+
+    <p>
+        マニューバの作成が終了した状態でゲームを開始します。<br>
+        そのままマニューバを実行してください。
+    </p>
+</body>
+END_HYPERDESC
+
+BEGIN_ENVIRONMENT
+  System Sol
+  Date MJD 55285.2167572725
+END_ENVIRONMENT
+
+BEGIN_FOCUS
+  Ship GL-01
+END_FOCUS
+
+BEGIN_CAMERA
+  TARGET GL-01
+  MODE Cockpit
+  FOV 50.00
+END_CAMERA
+
+BEGIN_HUD
+  TYPE Orbit
+  REF AUTO
+END_HUD
+
+BEGIN_MFD Left
+  TYPE User
+  MODE TransX
+  Ship  GL-01
+  FNumber 2
+  Int 1
+  Orbit True
+  Vector  -1065763.03857 -1192907.17347 -729136.402218
+  Vector  611.184030831 375.691895738 -1508.0497162
+  Double  4.90279493298e+012
+  Double  55285.2147077
+  Handle Moon
+  Handle NULL
+  Handle NULL
+Select Target
+ 0 Escape
+Autoplan
+0 0
+Plan type
+0 0
+Plan
+0 1
+Plan
+0 0
+Plan
+0 0
+Select Minor
+ 0 None
+Manoeuvre mode
+0 1
+
+Base Orbit
+0 0
+Prograde vel.
+ 5  848.471
+Man. date
+ 6  55285.2379277
+Outward vel.
+ 1  0
+Ch. plane vel.
+ 1  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 3
+Scale to view
+0 1
+Advanced
+0 0
+Pe Distance
+ 1  1758000
+Ej Orientation
+ 1  0.710314098977
+Equatorial view
+0 0
+Finvars
+  Finish BaseFunction
+  Int 2
+  Orbit True
+  Vector  -349173716.733 -19596334.481 -43180578.7172
+  Vector  44.9190489865 -4.56976618679 -200.679416098
+  Double  4.03503234902e+014
+  Double  55285.2379276
+  Handle Earth
+  Handle Moon
+  Handle NULL
+Select Target
+ 0 None
+Autoplan
+0 0
+Plan type
+0 2
+Plan
+0 0
+Plan
+0 0
+Plan
+0 1
+Select Minor
+ 0 None
+Manoeuvre mode
+0 0
+
+Base Orbit
+0 0
+Prograde vel.
+ 1  0
+Man. date
+ 1  55285.2167565
+Outward vel.
+ 1  0
+Ch. plane vel.
+ 1  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 0
+Scale to view
+0 1
+Advanced
+0 0
+Prograde vel.
+ 9  0
+Eject date
+ 1  55285.1639371
+Outward vel.
+ 1  0
+Ch. plane vel.
+ 1  0
+Finvars
+  Finish BaseFunction
+END_MFD
+
+BEGIN_MFD Right
+  TYPE User
+  MODE TransX
+END_MFD
+
+BEGIN_SHIPS
+GL-01:DeltaGlider
+  STATUS Orbiting Moon
+  RPOS -943001.173 -1109854.846 -984632.767
+  RVEL 772.0558 560.1142 -1370.7991
+  AROT -105.547 42.352 -107.175
+  VROT 0.0000 -0.0191 -0.0000
+  AFCMODE 7
+  PRPLEVEL 0:0.257715 1:0.938654
+  NAVFREQ 166 486 84 114
+  XPDR 0
+  RCOVER 1.0000 0.0000
+  HOVERHOLD 0 1 0.0000e+000 0.0000e+000
+  TRIM 1.000000
+  AAP 0:0 0:0 0:0
+  PSNGR 2 3 4
+END
+END_SHIPS

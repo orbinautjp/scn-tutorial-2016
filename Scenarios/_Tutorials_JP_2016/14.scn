@@ -1,0 +1,112 @@
+BEGIN_HYPERDESC
+<body style="font-family: Meiryo;">
+    <h1 style="font-size: small;">Part14 åéé¸âÒãOìπÇ…ì¸ÇÈ</h1>
+
+    <p>
+        å∏ë¨ÇµÇƒåéÇÃé¸âÒãOìπÇ…ìäì¸ÇµÇ‹Ç∑ÅB
+    </p>
+</body>
+END_HYPERDESC
+
+BEGIN_ENVIRONMENT
+  System Sol
+  Date MJD 55284.8436115375
+END_ENVIRONMENT
+
+BEGIN_FOCUS
+  Ship GL-01
+END_FOCUS
+
+BEGIN_CAMERA
+  TARGET GL-01
+  MODE Cockpit
+  FOV 50.00
+END_CAMERA
+
+BEGIN_HUD
+  TYPE Orbit
+  REF AUTO
+END_HUD
+
+BEGIN_MFD Left
+  TYPE User
+  MODE TransX
+  Ship  GL-01
+  FNumber 1
+  Int 5
+  Orbit True
+  Vector  9724627.55444 3000390.86852 -24216837.2185
+  Vector  -284.072164271 7.35877703164 1005.41380961
+  Double  4.90279493298e+012
+  Double  55284.8436115
+  Handle Moon
+  Handle NULL
+  Handle NULL
+Select Target
+ 0 None
+Autoplan
+0 0
+Plan type
+0 1
+Plan
+0 0
+Plan
+0 2
+Plan
+0 0
+Select Minor
+ 0 None
+Manoeuvre mode
+0 0
+
+Base Orbit
+0 0
+Prograde vel.
+ 9  0
+Man. date
+ 1  55284.8436115
+Outward vel.
+ 4  0
+Ch. plane vel.
+ 4  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 0
+Scale to view
+0 0
+Advanced
+0 0
+Draw Base
+0 0
+Finvars
+  Finish BaseFunction
+END_MFD
+
+BEGIN_MFD Right
+  TYPE Map
+  REF Moon
+  TARGET Brighton Beach
+END_MFD
+
+BEGIN_SHIPS
+GL-01:DeltaGlider
+  STATUS Orbiting Moon
+  RPOS 9724627.554 3000390.869 -24216837.218
+  RVEL -284.0722 7.3588 1005.4138
+  AROT -152.125 73.193 32.459
+  AFCMODE 7
+  PRPLEVEL 0:0.445770 1:0.969329
+  NAVFREQ 94 524 84 114
+  XPDR 0
+  HOVERHOLD 0 1 0.0000e+000 0.0000e+000
+  TRIM 1.000000
+  AAP 0:0 0:0 0:0
+  PSNGR 2 3 4
+END
+END_SHIPS
+
+BEGIN_ExtMFD
+END

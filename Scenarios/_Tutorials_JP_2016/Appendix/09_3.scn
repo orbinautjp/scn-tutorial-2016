@@ -1,0 +1,62 @@
+BEGIN_HYPERDESC
+<body style="font-family: Meiryo;">
+    <h1 style="font-size: small;">Part9-3 月への打ち上げ、パーキング軌道へ</h1>
+
+    <p>
+        月への打ち上げタイミングでゲームを開始します。<br>
+        ゲームを開始したらすぐに離陸。<br>
+        方位090に旋回して打ち上げてください。
+    </p>
+</body>
+END_HYPERDESC
+
+BEGIN_ENVIRONMENT
+  System Sol
+  Date MJD 55280.9339471466
+END_ENVIRONMENT
+
+BEGIN_FOCUS
+  Ship GL-01
+END_FOCUS
+
+BEGIN_CAMERA
+  TARGET GL-01
+  MODE Cockpit
+  FOV 50.00
+END_CAMERA
+
+BEGIN_HUD
+  TYPE Surface
+END_HUD
+
+BEGIN_MFD Left
+  TYPE Map
+  REF Moon
+  TARGET Brighton Beach
+  POS 0.00 0.00
+END_MFD
+
+BEGIN_MFD Right
+  TYPE OAlign
+  REF Earth
+  TARGET Moon
+END_MFD
+
+BEGIN_SHIPS
+GL-01:DeltaGlider
+  STATUS Landed Earth
+  POS -80.6824940 28.5967940
+  HEADING 330.01
+  ALT 2.469
+  AROT 67.198 34.002 10.185
+  RCSMODE 0
+  AFCMODE 7
+  PRPLEVEL 0:0.995000 1:1.000000
+  NAVFREQ 94 524 84 114
+  XPDR 0
+  HOVERHOLD 0 1 0.0000e+000 0.0000e+000
+  GEAR 1.0000 0.0000
+  AAP 0:0 0:0 0:0
+  PSNGR 2 3 4
+END
+END_SHIPS

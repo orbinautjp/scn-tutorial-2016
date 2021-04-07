@@ -1,0 +1,161 @@
+BEGIN_HYPERDESC
+<body style="font-family: Meiryo;">
+    <h1 style="font-size: small;">Part13 åéäÓínÇ÷ÇÃãOìπèCê≥ 2âÒñ⁄</h1>
+
+    <p>
+        åéÇÃèdóÕåóì‡Ç≈ÅAìÒìxñ⁄ÇÃãOìπèCê≥ÇçsÇ¢Ç‹Ç∑ÅB
+    </p>
+</body>
+END_HYPERDESC
+
+BEGIN_ENVIRONMENT
+  System Sol
+  Date MJD 55282.6948695769
+END_ENVIRONMENT
+
+BEGIN_FOCUS
+  Ship GL-01
+END_FOCUS
+
+BEGIN_CAMERA
+  TARGET GL-01
+  MODE Cockpit
+  FOV 50.00
+END_CAMERA
+
+BEGIN_HUD
+  TYPE Orbit
+  REF AUTO
+END_HUD
+
+BEGIN_MFD Left
+  TYPE User
+  MODE TransX
+  Ship  GL-01
+  FNumber 2
+  Int 0
+  Orbit True
+  Vector  -262682753.14 -22452366.1316 -13169470.9607
+  Vector  -868.150892997 -63.4371955949 -311.789878548
+  Double  3.98600439969e+014
+  Double  55282.6948696
+  Handle Earth
+  Handle NULL
+  Handle Moon
+Select Target
+ 0 Moon
+Autoplan
+0 0
+Plan type
+0 0
+Plan
+0 0
+Plan
+0 0
+Plan
+0 0
+Select Minor
+ 0 None
+Manoeuvre mode
+0 0
+
+Base Orbit
+0 0
+Prograde vel.
+ 6  0
+Man. date
+ 6  55282.6948696
+Outward vel.
+ 9  0
+Ch. plane vel.
+ 6  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 0
+Scale to view
+0 0
+Advanced
+0 0
+Finvars
+  Finish BaseFunction
+  Int 5
+  Orbit True
+  Vector  48831455.5375 23391.516263 -178642546.947
+  Vector  -218.091610479 17.9960494939 856.659202746
+  Double  4.90279493298e+012
+  Double  55282.84136
+  Handle Moon
+  Handle NULL
+  Handle NULL
+Select Target
+ 0 None
+Autoplan
+0 0
+Plan type
+0 1
+Plan
+0 0
+Plan
+0 2
+Plan
+0 0
+Select Minor
+ 0 None
+Manoeuvre mode
+0 0
+
+Base Orbit
+0 0
+Prograde vel.
+ 1  0
+Man. date
+ 1  55282.6948696
+Outward vel.
+ 1  0
+Ch. plane vel.
+ 1  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 0
+Scale to view
+0 0
+Advanced
+0 0
+Draw Base
+0 0
+Finvars
+  Finish BaseFunction
+END_MFD
+
+BEGIN_MFD Right
+  TYPE Map
+  REF Moon
+  TARGET Brighton Beach
+END_MFD
+
+BEGIN_SHIPS
+GL-01:DeltaGlider
+  STATUS Orbiting Sun
+  RPOS -148504111805.392 -21256796.748 -17592289900.154
+  RVEL 2160.4273 -61.9611 -29993.8261
+  AROT 98.700 23.059 -69.104
+  RCSMODE 2
+  AFCMODE 7
+  PRPLEVEL 0:0.446270 1:0.972218
+  NAVFREQ 94 524 84 114
+  XPDR 0
+  HOVERHOLD 0 1 0.0000e+000 0.0000e+000
+  TRIM 1.000000
+  AAP 0:0 0:0 0:0
+  PSNGR 2 3 4
+END
+END_SHIPS
+
+BEGIN_ExtMFD
+END

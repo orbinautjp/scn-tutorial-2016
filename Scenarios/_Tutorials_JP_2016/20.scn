@@ -1,0 +1,168 @@
+BEGIN_HYPERDESC
+<body style="font-family: Meiryo;">
+    <h1 style="font-size: small;">Part20 金星への打ち上げ・パーキング軌道へ</h1>
+
+    <p>
+        パーキング軌道に投入し、目標軌道とのずれを修正します。
+    </p>
+</body>
+END_HYPERDESC
+
+BEGIN_ENVIRONMENT
+  System Sol
+  Date MJD 55406.7126702130
+END_ENVIRONMENT
+
+BEGIN_FOCUS
+  Ship GL-01
+END_FOCUS
+
+BEGIN_CAMERA
+  TARGET GL-01
+  MODE Cockpit
+  FOV 50.00
+END_CAMERA
+
+BEGIN_HUD
+  TYPE Surface
+END_HUD
+
+BEGIN_MFD Left
+  TYPE User
+  MODE TransX
+  Ship  GL-01
+  FNumber 2
+  Int 1
+  Orbit True
+  Vector  -3013200.50562 926764.406629 5536387.02547
+  Vector  -343.523259998 87.815625845 -201.663802036
+  Double  3.98600439969e+014
+  Double  55406.7126702
+  Handle Earth
+  Handle NULL
+  Handle NULL
+Select Target
+ 0 Escape
+Autoplan
+0 0
+Plan type
+0 0
+Plan
+0 1
+Plan
+0 0
+Plan
+0 0
+Select Minor
+ 0 None
+Manoeuvre mode
+0 0
+
+Base Orbit
+0 0
+Prograde vel.
+ 1  0
+Man. date
+ 1  55406.7126702
+Outward vel.
+ 1  0
+Ch. plane vel.
+ 1  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 3
+Scale to view
+0 1
+Advanced
+0 0
+Pe Distance
+ 1  6571000
+Ej Orientation
+ 4  0.197424663669
+Equatorial view
+0 0
+Finvars
+  Finish BaseFunction
+  Int 2
+  Orbit False
+  Handle Sun
+  Handle Earth
+  Handle Venus
+Select Target
+ 0 Venus
+Autoplan
+0 0
+Plan type
+0 2
+Plan
+0 0
+Plan
+0 0
+Plan
+0 1
+Select Minor
+ 0 None
+Manoeuvre mode
+0 0
+
+Base Orbit
+0 1
+Prograde vel.
+ 1  0
+Man. date
+ 1  55406.7126702
+Outward vel.
+ 1  0
+Ch. plane vel.
+ 1  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 0
+Scale to view
+0 0
+Advanced
+0 0
+Prograde vel.
+ 8  -2713.68613805
+Eject date
+ 7  55407.5948055
+Outward vel.
+ 8  300.106044353
+Ch. plane vel.
+ 8  -508.021581541
+Finvars
+  Finish BaseFunction
+END_MFD
+
+BEGIN_MFD Right
+  TYPE User
+  MODE TransX
+END_MFD
+
+BEGIN_SHIPS
+GL-01:DeltaGlider
+  STATUS Landed Earth
+  POS -80.6824940 28.5967940
+  HEADING 330.01
+  ALT 2.469
+  AROT 67.198 34.002 10.185
+  RCSMODE 0
+  AFCMODE 7
+  PRPLEVEL 0:0.995000 1:1.000000
+  NAVFREQ 94 524 84 114
+  XPDR 0
+  HOVERHOLD 0 1 0.0000e+000 0.0000e+000
+  GEAR 1.0000 0.0000
+  AAP 0:0 0:0 0:0
+  PSNGR 2 3 4
+END
+END_SHIPS
+
+BEGIN_ExtMFD
+END

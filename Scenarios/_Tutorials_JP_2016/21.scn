@@ -1,0 +1,169 @@
+BEGIN_HYPERDESC
+<body style="font-family: Meiryo;">
+    <h1 style="font-size: small;">Part21 マニューバを作成・実行して金星へ</h1>
+
+    <p>
+        マニューバを作成・実行して、地球軌道を離脱します。
+    </p>
+</body>
+END_HYPERDESC
+
+BEGIN_ENVIRONMENT
+  System Sol
+  Date MJD 55406.7318957838
+END_ENVIRONMENT
+
+BEGIN_FOCUS
+  Ship GL-01
+END_FOCUS
+
+BEGIN_CAMERA
+  TARGET GL-01
+  MODE Cockpit
+  FOV 50.00
+END_CAMERA
+
+BEGIN_HUD
+  TYPE Orbit
+  REF AUTO
+END_HUD
+
+BEGIN_MFD Left
+  TYPE User
+  MODE TransX
+  Ship  GL-01
+  FNumber 2
+  Int 1
+  Orbit True
+  Vector  -5876126.13338 1573017.68809 -2484333.05263
+  Vector  2806.99321953 -899.563274514 -7209.34070977
+  Double  3.98600439969e+014
+  Double  55406.7318958
+  Handle Earth
+  Handle NULL
+  Handle NULL
+Select Target
+ 0 Escape
+Autoplan
+0 0
+Plan type
+0 0
+Plan
+0 1
+Plan
+0 0
+Plan
+0 0
+Select Minor
+ 0 None
+Manoeuvre mode
+0 0
+
+Base Orbit
+0 0
+Prograde vel.
+ 1  0
+Man. date
+ 1  55406.7318958
+Outward vel.
+ 1  0
+Ch. plane vel.
+ 1  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 3
+Scale to view
+0 1
+Advanced
+0 0
+Pe Distance
+ 1  6571000
+Ej Orientation
+ 1  0.197424663669
+Equatorial view
+0 0
+Finvars
+  Finish BaseFunction
+  Int 2
+  Orbit False
+  Handle Sun
+  Handle Earth
+  Handle Venus
+Select Target
+ 0 Venus
+Autoplan
+0 0
+Plan type
+0 2
+Plan
+0 0
+Plan
+0 0
+Plan
+0 1
+Select Minor
+ 0 None
+Manoeuvre mode
+0 0
+
+Base Orbit
+0 1
+Prograde vel.
+ 1  0
+Man. date
+ 1  55406.7126702
+Outward vel.
+ 1  0
+Ch. plane vel.
+ 1  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 0
+Scale to view
+0 0
+Advanced
+0 0
+Prograde vel.
+ 1  -2713.68613805
+Eject date
+ 1  55407.5948055
+Outward vel.
+ 1  300.106044353
+Ch. plane vel.
+ 1  -508.021581541
+Finvars
+  Finish BaseFunction
+END_MFD
+
+BEGIN_MFD Right
+  TYPE Orbit
+  PROJ Ship
+  FRAME Ecliptic
+  ALT
+  REF Earth
+END_MFD
+
+BEGIN_SHIPS
+GL-01:DeltaGlider
+  STATUS Orbiting Earth
+  RPOS -5876126.133 1573017.688 -2484333.053
+  RVEL 2806.9932 -899.5633 -7209.3407
+  AROT 91.399 -15.545 -168.373
+  VROT -0.0053 0.0009 0.0033
+  PRPLEVEL 0:0.569787 1:0.980385
+  NAVFREQ 94 524 84 114
+  XPDR 0
+  HOVERHOLD 0 1 0.0000e+000 0.0000e+000
+  AAP 0:0 0:0 0:0
+  PSNGR 2 3 4
+END
+END_SHIPS
+
+BEGIN_ExtMFD
+END

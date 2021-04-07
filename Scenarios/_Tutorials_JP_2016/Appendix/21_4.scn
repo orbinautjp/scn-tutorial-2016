@@ -1,0 +1,219 @@
+BEGIN_HYPERDESC
+<body style="font-family: Meiryo;">
+    <h1 style="font-size: small;">Part21-4 地球－金星マニューバを実行する</h1>
+
+    <p>
+        マニューバの作成が終了した状態でゲームを開始します。<br>
+        そのままマニューバを実行してください。
+    </p>
+</body>
+END_HYPERDESC
+
+BEGIN_ENVIRONMENT
+  System Sol
+  Date MJD 55406.7521906950
+END_ENVIRONMENT
+
+BEGIN_FOCUS
+  Ship GL-01
+END_FOCUS
+
+BEGIN_CAMERA
+  TARGET GL-01
+  MODE Cockpit
+  FOV 50.00
+END_CAMERA
+
+BEGIN_HUD
+  TYPE Orbit
+  REF AUTO
+END_HUD
+
+BEGIN_MFD Left
+  TYPE User
+  MODE TransX
+  Ship  GL-01
+  FNumber 3
+  Int 1
+  Orbit True
+  Vector  1881628.01039 -628269.967104 -6264362.58522
+  Vector  7170.59935839 -1931.61325927 2347.5125373
+  Double  3.98600439969e+014
+  Double  55406.7464376
+  Handle Earth
+  Handle NULL
+  Handle NULL
+Select Target
+ 0 Escape
+Autoplan
+0 0
+Plan type
+0 0
+Plan
+0 1
+Plan
+0 0
+Plan
+0 0
+Select Minor
+ 0 None
+Manoeuvre mode
+0 1
+
+Base Orbit
+0 0
+Prograde vel.
+ 6  3571.0378448
+Man. date
+ 7  55406.7709976
+Outward vel.
+ 6  -1.8125
+Ch. plane vel.
+ 5  -172.478
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 3
+Scale to view
+0 1
+Advanced
+0 0
+Pe Distance
+ 1  6571000
+Ej Orientation
+ 1  0.197424663669
+Equatorial view
+0 0
+Finvars
+  Finish BaseFunction
+  Int 2
+  Orbit True
+  Vector  89870566515.2 66772537.0449 -122379789983
+  Vector  21567.5012168 516.38311571 15621.1190361
+  Double  1.32712838556e+020
+  Double  55406.7709998
+  Handle Sun
+  Handle Earth
+  Handle Venus
+Select Target
+ 0 Venus
+Autoplan
+0 0
+Plan type
+0 2
+Plan
+0 0
+Plan
+0 0
+Plan
+0 1
+Select Minor
+ 0 None
+Manoeuvre mode
+0 0
+
+Base Orbit
+0 0
+Prograde vel.
+ 1  0
+Man. date
+ 1  55406.7519057
+Outward vel.
+ 1  0
+Ch. plane vel.
+ 1  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 0
+Scale to view
+0 0
+Advanced
+0 0
+Prograde vel.
+ 9  0
+Eject date
+ 1  55407.5948055
+Outward vel.
+ 9  0
+Ch. plane vel.
+ 9  0
+Finvars
+  Finish BaseFunction
+  Int 5
+  Orbit True
+  Vector  3021713294.43 3163091918.69 4369395855.9
+  Vector  -2549.87257974 -2669.2124335 -3687.07984314
+  Double  3.2485863e+014
+  Double  55517.0820552
+  Handle Venus
+  Handle NULL
+  Handle NULL
+Select Target
+ 0 None
+Autoplan
+0 0
+Plan type
+0 1
+Plan
+0 0
+Plan
+0 2
+Plan
+0 0
+Select Minor
+ 0 None
+Manoeuvre mode
+0 0
+
+Base Orbit
+0 0
+Prograde vel.
+ 1  0
+Man. date
+ 1  55406.7521903
+Outward vel.
+ 1  0
+Ch. plane vel.
+ 1  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 0
+Scale to view
+0 0
+Advanced
+0 0
+Draw Base
+0 0
+Finvars
+  Finish BaseFunction
+END_MFD
+
+BEGIN_MFD Right
+  TYPE User
+  MODE TransX
+END_MFD
+
+BEGIN_SHIPS
+GL-01:DeltaGlider
+  STATUS Orbiting Earth
+  RPOS 4926021.564 -1427899.668 -4107653.922
+  RVEL 4722.3137 -1192.1375 6077.6641
+  AROT 124.087 -52.047 -59.545
+  VROT -0.0339 -0.0363 0.1241
+  AFCMODE 7
+  PRPLEVEL 0:0.569787 1:0.980385
+  NAVFREQ 94 524 84 114
+  XPDR 0
+  HOVERHOLD 0 1 0.0000e+000 0.0000e+000
+  AAP 0:0 0:0 0:0
+  PSNGR 2 3 4
+END
+END_SHIPS

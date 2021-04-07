@@ -1,0 +1,64 @@
+BEGIN_HYPERDESC
+<body style="font-family: Meiryo;">
+    <h1 style="font-size: small;">Part10 地球軌道から月へ</h1>
+
+    <p>
+        TransXで月遷移軌道のマニューバを作成します。
+    </p>
+</body>
+END_HYPERDESC
+
+BEGIN_ENVIRONMENT
+  System Sol
+  Date MJD 55280.9699704481
+END_ENVIRONMENT
+
+BEGIN_FOCUS
+  Ship GL-01
+END_FOCUS
+
+BEGIN_CAMERA
+  TARGET GL-01
+  MODE Cockpit
+  FOV 50.00
+END_CAMERA
+
+BEGIN_HUD
+  TYPE Orbit
+  REF AUTO
+END_HUD
+
+BEGIN_MFD Left
+  TYPE OAlign
+  REF Earth
+  TARGET Moon
+END_MFD
+
+BEGIN_MFD Right
+  TYPE Orbit
+  PROJ Ship
+  FRAME Ecliptic
+  ALT
+  REF Earth
+END_MFD
+
+BEGIN_SHIPS
+GL-01:DeltaGlider
+  STATUS Orbiting Earth
+  RPOS 473433.741 -136191.919 -6555821.450
+  RVEL 7738.9709 665.9918 541.2349
+  AROT 91.538 4.810 -86.466
+  RCSMODE 2
+  AFCMODE 7
+  PRPLEVEL 0:0.557916 1:0.979747
+  NAVFREQ 94 524 84 114
+  XPDR 0
+  HOVERHOLD 0 1 0.0000e+000 0.0000e+000
+  TRIM 1.000000
+  AAP 0:0 0:0 0:0
+  PSNGR 2 3 4
+END
+END_SHIPS
+
+BEGIN_ExtMFD
+END

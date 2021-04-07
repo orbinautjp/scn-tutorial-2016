@@ -1,0 +1,158 @@
+BEGIN_HYPERDESC
+<body style="font-family: Meiryo;">
+    <h1 style="font-size: small;">Part12-5 軌道修正マニューバを実行する</h1>
+
+    <p>
+        マニューバの作成が終了した状態でゲームを開始します。<br>
+        そのままマニューバを実行してください。
+    </p>
+</body>
+END_HYPERDESC
+
+BEGIN_ENVIRONMENT
+  System Sol
+  Date MJD 55282.6516353065
+END_ENVIRONMENT
+
+BEGIN_FOCUS
+  Ship GL-01
+END_FOCUS
+
+BEGIN_CAMERA
+  TARGET GL-01
+  MODE Cockpit
+  FOV 50.00
+END_CAMERA
+
+BEGIN_HUD
+  TYPE Orbit
+  REF AUTO
+END_HUD
+
+BEGIN_MFD Left
+  TYPE User
+  MODE TransX
+  Ship  GL-01
+  FNumber 2
+  Int 0
+  Orbit True
+  Vector  -258983772.531 -22107193.382 -11854909.016
+  Vector  -885.135421696 -82.6348221136 -310.828077638
+  Double  3.98600439969e+014
+  Double  55282.6458125
+  Handle Earth
+  Handle NULL
+  Handle Moon
+Select Target
+ 0 Moon
+Autoplan
+0 0
+Plan type
+0 0
+Plan
+0 0
+Plan
+0 0
+Plan
+0 0
+Select Minor
+ 0 None
+Manoeuvre mode
+0 1
+
+Base Orbit
+0 0
+Prograde vel.
+ 5  6.101
+Man. date
+ 1  55282.6604686
+Outward vel.
+ 1  0
+Ch. plane vel.
+ 4  -17.562
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 0
+Scale to view
+0 0
+Advanced
+0 0
+Finvars
+  Finish BaseFunction
+  Int 5
+  Orbit True
+  Vector  49503557.4535 20409.3083882 -181379460.312
+  Vector  -217.922296387 17.7612978592 856.387007892
+  Double  4.90279493298e+012
+  Double  55282.804728
+  Handle Moon
+  Handle NULL
+  Handle NULL
+Select Target
+ 0 None
+Autoplan
+0 0
+Plan type
+0 1
+Plan
+0 0
+Plan
+0 2
+Plan
+0 0
+Select Minor
+ 0 None
+Manoeuvre mode
+0 0
+
+Base Orbit
+0 0
+Prograde vel.
+ 1  0
+Man. date
+ 1  55282.6516351
+Outward vel.
+ 1  0
+Ch. plane vel.
+ 1  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 0
+Scale to view
+0 0
+Advanced
+0 0
+Draw Base
+0 0
+Finvars
+  Finish BaseFunction
+END_MFD
+
+BEGIN_MFD Right
+  TYPE Map
+  REF Moon
+  TARGET Brighton Beach
+END_MFD
+
+BEGIN_SHIPS
+GL-01:DeltaGlider
+  STATUS Orbiting Sun
+  RPOS -148512129440.599 -20958663.921 -17480251171.850
+  RVEL 2124.4016 -80.8971 -29995.3478
+  AROT 2.092 14.251 -4.528
+  AFCMODE 7
+  PRPLEVEL 0:0.446862 1:0.975232
+  NAVFREQ 94 524 84 114
+  XPDR 0
+  HOVERHOLD 0 1 0.0000e+000 0.0000e+000
+  TRIM 1.000000
+  AAP 0:0 0:0 0:0
+  PSNGR 2 3 4
+END
+END_SHIPS

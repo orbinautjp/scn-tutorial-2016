@@ -1,0 +1,9 @@
+BEGIN_HYPERDESC
+<body style="font-family: Meiryo;">
+    <h1 style="font-size: small;">チュートリアル シナリオ集</h1>
+    <p>
+        チュートリアル用のサンプルシナリオです。<br>
+        付属のreadmeファイルをはじめにお読みください。
+    </p>
+</body>
+END_HYPERDESC

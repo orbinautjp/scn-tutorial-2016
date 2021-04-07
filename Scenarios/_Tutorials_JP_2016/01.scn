@@ -1,0 +1,67 @@
+BEGIN_HYPERDESC
+<body style="font-family: Meiryo;">
+    <h1 style="font-size: small;">Part1 ë≈Çøè„Ç∞Ç©ÇÁãOìπìäì¸Ç‹Ç≈</h1>
+
+    <p>
+        âFíàëDÇë≈Çøè„Ç∞ÇƒÅAé¸âÒãOìπÇ…ìäì¸ÇµÇ‹Ç∑ÅB
+    </p>
+</body>
+END_HYPERDESC
+
+BEGIN_ENVIRONMENT
+  System Sol
+  Date MJD 51983.5619320174
+END_ENVIRONMENT
+
+BEGIN_FOCUS
+  Ship GL-01
+END_FOCUS
+
+BEGIN_CAMERA
+  TARGET GL-01
+  MODE Cockpit
+  FOV 50.00
+END_CAMERA
+
+BEGIN_HUD
+  TYPE Surface
+END_HUD
+
+BEGIN_MFD Left
+  TYPE Surface
+END_MFD
+
+BEGIN_MFD Right
+  TYPE Map
+  REF Earth
+  OTARGET ISS
+END_MFD
+
+BEGIN_PANEL
+END_PANEL
+
+
+BEGIN_SHIPS
+ISS:ProjectAlpha_ISS
+  STATUS Orbiting Earth
+  RPOS 4915269.75 4084559.88 -2105227.01
+  RVEL 5064.033 -5764.583 645.739
+  AROT 110.00 -10.00 80.00
+  PRPLEVEL 0:1.000
+  IDS 0:588 10 1:586 10 2:584 10 3:582 10 4:580 10
+  NAVFREQ 0 0
+  XPDR 466
+END
+GL-01:DeltaGlider
+  STATUS Landed Earth
+  POS -80.6825040 28.5968040
+  HEADING 330.01
+  RCSMODE 0
+  PRPLEVEL 0:0.995 1:1.000
+  NAVFREQ 94 524 84 114
+  XPDR 0
+  NOSECONE 0 0.0000
+  GEAR 1 1.0000
+  AIRLOCK 0 0.0000
+END
+END_SHIPS

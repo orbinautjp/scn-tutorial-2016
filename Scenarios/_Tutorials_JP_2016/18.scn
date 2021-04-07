@@ -1,0 +1,60 @@
+BEGIN_HYPERDESC
+<body style="font-family: Meiryo;">
+    <h1 style="font-size: small;">Part18 ã‡êØÇ÷ÇÃPlanÇçÏÇÈ</h1>
+
+    <p>
+        òfêØä‘ëJà⁄ãOìπÇÃPlanÇçÏê¨ÇµÇ‹Ç∑ÅB
+    </p>
+</body>
+END_HYPERDESC
+
+BEGIN_ENVIRONMENT
+  System Sol
+  Date MJD 55269.6701854908
+END_ENVIRONMENT
+
+BEGIN_FOCUS
+  Ship GL-01
+END_FOCUS
+
+BEGIN_CAMERA
+  TARGET GL-01
+  MODE Cockpit
+  FOV 50.00
+END_CAMERA
+
+BEGIN_HUD
+  TYPE Surface
+END_HUD
+
+BEGIN_MFD Left
+  TYPE HSI
+  NAV 0 1
+  OBS 5.34 5.76
+END_MFD
+
+BEGIN_MFD Right
+  TYPE Map
+  REF Earth
+  OTARGET ISS
+  BTARGET Habana
+  POS 0.00 0.00
+END_MFD
+
+BEGIN_VC
+END_VC
+
+BEGIN_SHIPS
+GL-01:DeltaGlider
+  STATUS Landed Earth
+  POS -80.6824940 28.5967940
+  HEADING 330.01
+  RCSMODE 0
+  PRPLEVEL 0:0.995000 1:1.000000
+  NAVFREQ 94 524 84 114
+  XPDR 0
+  GEAR 1 1.0000
+  PSNGR 2 3 4
+  AAP 0:0 0:0 0:0
+END
+END_SHIPS

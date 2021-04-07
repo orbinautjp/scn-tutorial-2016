@@ -1,0 +1,220 @@
+BEGIN_HYPERDESC
+<body style="font-family: Meiryo;">
+    <h1 style="font-size: small;">Part22 ínãÖÅ\ã‡êØä‘ÇÃãOìπèCê≥</h1>
+
+    <p>
+        ínãÖÅ\ã‡êØÇÃòfêØä‘âFíàÇ≈ãOìπèCê≥ÇµÇ‹Ç∑ÅB
+    </p>
+</body>
+END_HYPERDESC
+
+BEGIN_ENVIRONMENT
+  System Sol
+  Date MJD 55406.7739386380
+END_ENVIRONMENT
+
+BEGIN_FOCUS
+  Ship GL-01
+END_FOCUS
+
+BEGIN_CAMERA
+  TARGET GL-01
+  MODE Cockpit
+  FOV 50.00
+END_CAMERA
+
+BEGIN_HUD
+  TYPE Orbit
+  REF AUTO
+END_HUD
+
+BEGIN_MFD Left
+  TYPE User
+  MODE TransX
+  Ship  GL-01
+  FNumber 3
+  Int 1
+  Orbit True
+  Vector  -662974.177673 351040.592216 6858485.71716
+  Vector  -10575.0029243 3115.71806721 1324.09003313
+  Double  3.98600439969e+014
+  Double  55406.7739386
+  Handle Earth
+  Handle NULL
+  Handle NULL
+Select Target
+ 0 Escape
+Autoplan
+0 0
+Plan type
+0 0
+Plan
+0 1
+Plan
+0 0
+Plan
+0 0
+Select Minor
+ 0 None
+Manoeuvre mode
+0 0
+
+Base Orbit
+0 0
+Prograde vel.
+ 6  0
+Man. date
+ 7  55406.7739386
+Outward vel.
+ 1  0
+Ch. plane vel.
+ 4  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 3
+Scale to view
+0 1
+Advanced
+0 0
+Pe Distance
+ 1  6571000
+Ej Orientation
+ 1  0.197424663669
+Equatorial view
+0 0
+Finvars
+  Finish BaseFunction
+  Int 2
+  Orbit True
+  Vector  89870513167.8 66986616.004 -122379771912
+  Vector  21567.6530103 517.783288664 15621.9465787
+  Double  1.32712838556e+020
+  Double  55406.7709878
+  Handle Sun
+  Handle Earth
+  Handle Venus
+Select Target
+ 0 Venus
+Autoplan
+0 0
+Plan type
+0 2
+Plan
+0 0
+Plan
+0 0
+Plan
+0 1
+Select Minor
+ 0 None
+Manoeuvre mode
+0 0
+
+Base Orbit
+0 0
+Prograde vel.
+ 1  0
+Man. date
+ 1  55406.7509142
+Outward vel.
+ 1  0
+Ch. plane vel.
+ 1  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 0
+Scale to view
+0 0
+Advanced
+0 0
+Prograde vel.
+ 9  0
+Eject date
+ 1  55407.5948055
+Outward vel.
+ 9  0
+Ch. plane vel.
+ 9  0
+Finvars
+  Finish BaseFunction
+  Int 5
+  Orbit True
+  Vector  3020268624.14 3165100127.53 4368972000.99
+  Vector  -2548.23319619 -2670.85311268 -3684.689913
+  Double  3.2485863e+014
+  Double  55517.0969348
+  Handle Venus
+  Handle NULL
+  Handle NULL
+Select Target
+ 0 None
+Autoplan
+0 0
+Plan type
+0 1
+Plan
+0 0
+Plan
+0 2
+Plan
+0 0
+Select Minor
+ 0 None
+Manoeuvre mode
+0 0
+
+Base Orbit
+0 0
+Prograde vel.
+ 1  0
+Man. date
+ 1  55406.7739386
+Outward vel.
+ 1  0
+Ch. plane vel.
+ 1  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 0
+Scale to view
+0 0
+Advanced
+0 0
+Draw Base
+0 0
+Finvars
+  Finish BaseFunction
+END_MFD
+
+BEGIN_MFD Right
+  TYPE User
+  MODE TransX
+END_MFD
+
+BEGIN_SHIPS
+GL-01:DeltaGlider
+  STATUS Orbiting Earth
+  RPOS -662974.178 351040.592 6858485.717
+  RVEL -10575.0029 3115.7181 1324.0900
+  AROT 45.329 64.517 46.653
+  AFCMODE 7
+  PRPLEVEL 0:0.442416 1:0.963578
+  NAVFREQ 94 524 84 114
+  XPDR 0
+  HOVERHOLD 0 1 0.0000e+000 0.0000e+000
+  AAP 0:0 0:0 0:0
+  PSNGR 2 3 4
+END
+END_SHIPS
+
+BEGIN_ExtMFD
+END

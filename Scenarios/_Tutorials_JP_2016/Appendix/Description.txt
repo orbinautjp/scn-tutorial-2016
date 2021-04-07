@@ -1,0 +1,8 @@
+BEGIN_HYPERDESC
+<body style="font-family: Meiryo;">
+    <h1 style="font-size: small;">付録</h1>
+    <p>
+        各Partの途中からゲームを開始します。
+    </p>
+</body>
+END_HYPERDESC

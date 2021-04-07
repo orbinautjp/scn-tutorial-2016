@@ -1,0 +1,63 @@
+BEGIN_HYPERDESC
+<body style="font-family: Meiryo;">
+    <h1 style="font-size: small;">Part16 月から地球へ - Planを作成する</h1>
+
+    <p>
+        月から地球に降下するため、Plan（軌道の計画）を作成します。
+    </p>
+</body>
+END_HYPERDESC
+
+BEGIN_ENVIRONMENT
+  System Sol
+  Date MJD 55285.1626591529
+END_ENVIRONMENT
+
+BEGIN_FOCUS
+  Ship GL-01
+END_FOCUS
+
+BEGIN_CAMERA
+  TARGET GL-01
+  MODE Cockpit
+  FOV 50.00
+END_CAMERA
+
+BEGIN_HUD
+  TYPE Surface
+END_HUD
+
+BEGIN_MFD Left
+  TYPE Surface
+  SPDMODE 1
+END_MFD
+
+BEGIN_MFD Right
+  TYPE Launch
+  NAV 1
+END_MFD
+
+BEGIN_SHIPS
+GL-01:DeltaGlider
+  STATUS Landed Moon
+  BASE Brighton Beach:2
+  POS -33.4450890 41.1216825
+  HEADING 59.76
+  ALT 2.559
+  AROT 23.057 -11.757 40.467
+  RCSMODE 2
+  AFCMODE 7
+  PRPLEVEL 0:0.310763 1:0.950471
+  NAVFREQ 166 486 84 114
+  XPDR 0
+  RCOVER 1.0000 0.0000
+  HOVERHOLD 0 1 0.0000e+000 0.0000e+000
+  TRIM 1.000000
+  GEAR 1.0000 0.0000
+  AAP 0:0 0:0 0:0
+  PSNGR 2 3 4
+END
+END_SHIPS
+
+BEGIN_ExtMFD
+END

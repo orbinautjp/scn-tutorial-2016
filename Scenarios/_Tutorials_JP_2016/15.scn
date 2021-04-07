@@ -1,0 +1,114 @@
+BEGIN_HYPERDESC
+<body style="font-family: Meiryo;">
+    <h1 style="font-size: small;">Part15 月面基地への着陸</h1>
+
+    <p>
+        周回軌道を離脱し、月面基地に着陸します。
+    </p>
+</body>
+END_HYPERDESC
+
+BEGIN_ENVIRONMENT
+  System Sol
+  Date MJD 55285.0918890823
+END_ENVIRONMENT
+
+BEGIN_FOCUS
+  Ship GL-01
+END_FOCUS
+
+BEGIN_CAMERA
+  TARGET GL-01
+  MODE Cockpit
+  FOV 50.00
+END_CAMERA
+
+BEGIN_HUD
+  TYPE Orbit
+  REF AUTO
+END_HUD
+
+BEGIN_MFD Left
+  TYPE Map
+  REF Moon
+  TARGET Brighton Beach
+  POS 0.00 0.00
+END_MFD
+
+BEGIN_MFD Right
+  TYPE User
+  MODE TransX
+  Ship  GL-01
+  FNumber 1
+  Int 5
+  Orbit True
+  Vector  231788.242035 772848.143514 1561817.81512
+  Vector  -1129.87717124 -1029.6218123 673.5145734
+  Double  4.90279493298e+012
+  Double  55285.0918891
+  Handle Moon
+  Handle NULL
+  Handle NULL
+Select Target
+ 0 None
+Autoplan
+0 0
+Plan type
+0 1
+Plan
+0 0
+Plan
+0 2
+Plan
+0 0
+Select Minor
+ 0 None
+Manoeuvre mode
+0 0
+
+Base Orbit
+0 0
+Prograde vel.
+ 3  0
+Man. date
+ 1  55285.0918891
+Outward vel.
+ 4  0
+Ch. plane vel.
+ 3  0
+Intercept with
+0 0
+Orbits to Icept
+0 0
+Graph projection
+0 1
+Scale to view
+0 1
+Advanced
+0 0
+Draw Base
+0 0
+Finvars
+  Finish BaseFunction
+END_MFD
+
+BEGIN_SHIPS
+GL-01:DeltaGlider
+  STATUS Orbiting Moon
+  RPOS 231788.242 772848.144 1561817.815
+  RVEL -1129.8772 -1029.6218 673.5146
+  AROT 128.089 -41.799 76.501
+  RCSMODE 2
+  AFCMODE 7
+  PRPLEVEL 0:0.417285 1:0.961701
+  NAVFREQ 94 524 84 114
+  XPDR 0
+  HOVERHOLD 0 1 0.0000e+000 0.0000e+000
+  TRIM 1.000000
+  AAP 0:0 0:0 0:0
+  PSNGR 2 3 4
+END
+END_SHIPS
+
+BEGIN_ExtMFD
+END
